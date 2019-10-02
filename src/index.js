@@ -106,7 +106,6 @@ export class Select extends Component {
       !isEqual(prevProps.values, this.props.values) &&
       isEqual(prevProps.values, prevState.values)
     ) {
-      this.props.onChange(this.state.values);
       this.setState({
         values: this.props.values
       });
