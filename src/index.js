@@ -104,8 +104,7 @@ export class Select extends Component {
   componentDidUpdate(prevProps, prevState) {
     console.log('componentDidUpdate');
     if (
-      !isEqual(prevProps.values, this.props.values) &&
-      isEqual(prevProps.values, prevState.values)
+      !isEqual(prevProps.values, this.props.values)
     ) {
       console.log('state Should be updated from props');
       this.setState({
