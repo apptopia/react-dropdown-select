@@ -81,6 +81,7 @@ class Input extends Component {
         onChange={methods.setSearch}
         onBlur={this.onBlur}
         placeholder={handlePlaceHolder(props, state)}
+        autoComplete="none"
       />
     );
   }
